@@ -3,7 +3,7 @@
  * https://github.com/peterhaldbaek/popup-blocked
  */
 (function($) {
-	'use strict';
+  'use strict';
 
   var popupblocked = function() {
     var popUp = window.open('/', 'popupblocked', 'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=1, height=1, visible=none');
