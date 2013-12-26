@@ -15,6 +15,6 @@
     }
   };
 
-	$.popupblocked = popupblocked;
-
+  $.popupblocked = popupblocked;
+  
 }(jQuery));
