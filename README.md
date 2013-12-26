@@ -25,6 +25,8 @@ This plugin is heavily inspired by
 http://davidwalsh.name/popup-block-javascript and the discussion at
 http://stackoverflow.com/questions/668286/detect-blocked-popup-in-chrome.
 
+Any contributions or suggestions are very welcome!
+
 ## Installation
 
 Include script *after* the jQuery library:
@@ -45,4 +47,10 @@ if ($.popupblocked()) {
 }
 ```
 
-Any contributions or suggestions are very welcome!
+The method also accepts these options (controlling the size and position of the
+test popup):
+
+* left
+* top
+* width
+* height

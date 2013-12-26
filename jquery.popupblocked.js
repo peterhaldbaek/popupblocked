@@ -5,8 +5,23 @@
 (function($) {
   'use strict';
 
-  var popupblocked = function() {
-    var popUp = window.open('/', 'popupblocked', 'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=1, height=1, visible=none');
+  var defaults = {
+    left: 0,
+    top: 0,
+    width: 100,
+    height: 100
+  };
+
+  var popupblocked = function(options) {
+    var opts = $.extend({}, options, defaults);
+
+    var features = 'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,visible=none' +
+      ',left=' + opts.left +
+      ',top=' + opts.top +
+      ',width=' + opts.width +
+      ',height=' + opts.height;
+
+    var popUp = window.open('/', 'popupblocked', features);
     if (!popUp || typeof(popUp)==='undefined') {
       return true;
     } else {
@@ -16,5 +31,5 @@
   };
 
   $.popupblocked = popupblocked;
-  
+
 }(jQuery));
