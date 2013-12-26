@@ -50,7 +50,16 @@ if ($.popupblocked()) {
 The method also accepts these options (controlling the size and position of the
 test popup):
 
-* left
-* top
-* width
-* height
+* left (default: 0)
+* top (default: 0)
+* width (default: 100)
+* height (default: 100)
+
+```javascript
+$.popupblocked({
+  left: 0,
+  top: 0,
+  width: 100,
+  height: 100
+}));
+```
