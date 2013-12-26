@@ -10,7 +10,7 @@
     if (!popUp || typeof(popUp)==='undefined') {
       return true;
     } else {
-      // popUp.close();
+      popUp.close();
       return false;
     }
   };
