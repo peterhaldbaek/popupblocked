@@ -1,6 +1,6 @@
 /*
  * jQuery Popup Blocked plugin
- * https://github.com/peterhaldbaek/popup-blocked
+ * https://github.com/peterhaldbaek/popupblocked
  */
 (function($) {
   'use strict';
