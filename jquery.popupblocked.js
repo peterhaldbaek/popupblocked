@@ -2,7 +2,13 @@
  * jQuery Popup Blocked plugin
  * https://github.com/peterhaldbaek/popupblocked
  */
-(function($) {
+(function(factory) {
+  if (typeof define === 'function' && define.amd) {
+    define(['jquery'], factory);
+  } else {
+    factory(jQuery);
+  }
+}(function($) {
   'use strict';
 
   var defaults = {
@@ -32,4 +38,4 @@
 
   $.popupblocked = popupblocked;
 
-}(jQuery));
+}));
